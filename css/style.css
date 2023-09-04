@@ -1,3 +1,45 @@
+
+
+
+
+
+  
+  /* expose the following view timelines for any elements to observe by name */
+  
+  /* give each section it's relevant view timeline name */
+  /* note: this must match the name exposed on the body timeline-scope */
+ 
+
+ 
+
+
+  section {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;}
+
+    section img {
+      width: 100%;
+      height: -webkit-fill-available;
+      background: antiquewhite;
+      padding: 10px;
+      border-radius: 10px;
+  }
+
+  section img {width: 100%;
+    height: -webkit-fill-available;}
+  
+  .card { padding: 9px;
+    background: var(--primary-fg);
+    box-shadow: var(--secondary-shadow);
+    border: 1px solid var(--primary-border);
+    border-radius: 7px;}
+
+
+
+
+/*  */
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -842,6 +884,16 @@ div#upload{
 .ui--stack .ui--card .ui-card--icon {
   margin-right: 12px;
 }
+
+
+
+.ui--stack .ui--card{
+  display: grid;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
 .ui--stack .ui--card .ui--toggle {
   margin-left: auto;
 }
