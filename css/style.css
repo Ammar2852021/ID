@@ -58,17 +58,10 @@ html {
   z-index: 200;
   position: relative;
 }
-.bottom-nav label::before {
-  content: "";
-  position: absolute;
-  width: 3rem;
-  height:3rem;
-  border-radius: 50%;
-  transform: scale(0);
-  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
+
+
+
 .bottom-nav ion-icon {
-  font-size: 3.5rem;
   color: inherit;
 }
 .bottom-nav input:checked + .home {
