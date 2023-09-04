@@ -304,8 +304,9 @@ border: 5px solid var(--blue);
   position: absolute;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid var(--grey);
   z-index: 2;
+  border: 5px solid var(--blue);
+
 }
 /* User Page */
 .user-page-wrapper {
