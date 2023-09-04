@@ -1054,7 +1054,6 @@ div#upload{
   cursor: pointer;
 }
 .ui--chart-pie span {
-  opacity: 0;
   transition: opacity 0.2s;
 }
 .ui--chart-pie:hover span {
