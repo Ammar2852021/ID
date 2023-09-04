@@ -1,3 +1,115 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  overflow-y: scroll;
+}
+
+
+ #upload{
+  margin-bottom: 7rem;
+}
+
+
+.bottom-nav {
+  background: #fff;
+  width: 100%;
+  height: 7rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+}
+.bottom-nav input {
+  display: none;
+}
+.bottom-nav label {
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b5c4da;
+  z-index: 200;
+  position: relative;
+}
+.bottom-nav label::before {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height:5rem;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.bottom-nav ion-icon {
+  font-size: 3.5rem;
+  color: inherit;
+}
+.bottom-nav input:checked + .home {
+  color: #ff90b5;
+}
+.bottom-nav input:checked + .home > ion-icon:first-child {
+  opacity: 0;
+}
+.bottom-nav input:checked + .home::before {
+  background: #ffdfea;
+  transform: scale(1);
+}
+.bottom-nav input:checked + .cart {
+  color: #A439F1;
+}
+.bottom-nav input:checked + .cart > ion-icon:first-child {
+  opacity: 0;
+}
+.bottom-nav input:checked + .cart::before {
+  background: #d9bcee;
+  transform: scale(1);
+}
+.bottom-nav input:checked + .fav {
+  color: #00d1c7;
+}
+.bottom-nav input:checked + .fav > ion-icon:first-child {
+  opacity: 0;
+}
+.bottom-nav input:checked + .fav::before {
+  background: #c3eeec;
+  transform: scale(1);
+}
+.bottom-nav input:checked + .profile {
+  color: #ffc460;
+}
+.bottom-nav input:checked + .profile > ion-icon:first-child {
+  opacity: 0;
+}
+.bottom-nav input:checked + .profile::before {
+  background: #ffebc7;
+  transform: scale(1);
+}
+.bottom-nav input:checked + label .fill {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.fill {
+  position: absolute;
+  left: 0.8rem;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+
+
 /* -
 -*-~*~-*-*-~*~-*-*-~*~* |
 ●▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬●
@@ -487,8 +599,7 @@ body {
   margin: 0;
   font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
   font-size: 16px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 600'%3E %3Cpath fill='%23f7f8f8' d='M0 0h900v600H0z'/%3E %3Cpath fill='%23BDC9C7' d='M147-53c38 24 61 77 54 124s-44 87-82 114c-38 28-78 43-124 49-45 6-96 1-115-26-19-28-6-79-3-127s-5-94 14-117S-44-60 5-64c50-4 104-12 142 11Zm444 156c24 25 54 44 64 72 9 29-2 67-27 89-24 23-62 30-96 26s-64-19-77-41c-12-23-8-53-1-77 6-23 14-40 27-66 13-25 30-59 48-60 18 0 37 31 62 57ZM340 521c25 19 53 41 53 63s-28 44-53 54-47 8-74 13-58 17-77 7c-18-11-22-42-19-70 4-29 15-54 33-72 18-19 43-31 67-30 23 2 45 17 70 35Z'/%3E %3C/svg%3E");
-  background-size: contain;
+
 }
 
 body {
@@ -510,14 +621,14 @@ body {
 
 .screen-1,
 .screen-2,
-.screen-3,.user-header-wrapper {
+.screen-3,.user-header-wrapper ,.modal{
   backdrop-filter: blur(40px);
   background: rgba(189, 201, 199, 0.25);
-  height: 675px;
   padding: 16px 24px;
   overflow: hidden;
-  border-radius: 30px;
 }
+
+
 
 .screen-1 {
   grid-area: screen-1;
@@ -1271,8 +1382,7 @@ button {
 		--fg: hsl(var(--hue),10%,95%);
 	}
 	.modal {
-		background-color: hsl(var(--hue),10%,10%);
-		color: hsl(var(--hue),10%,95%);
+		color: black;
 	}
 	.modal__close-button,
 	.modal__message,
