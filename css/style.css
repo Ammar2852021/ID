@@ -259,7 +259,7 @@ border: 5px solid var(--blue);
 }
 /* User stories */
 .user-stories {
-  margin: 3em 0 1em 0;
+  margin: 2em 0 1em 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -299,8 +299,8 @@ border: 5px solid var(--blue);
   padding-bottom: 100%;
 }
 .story-img {
-  width: calc(100% - .5em);
-  height: calc(100% - .5em);
+  width:80px;
+  height:80px;
   position: absolute;
   object-fit: cover;
   border-radius: 50%;
