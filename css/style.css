@@ -569,9 +569,9 @@ body {
 @media (max-width:992px) {
   
 
-  body{
+  /* body{
     overflow: hidden;
-  }
+  } */
 
   .container{
     display: block;
@@ -585,10 +585,10 @@ body {
     border-radius: 0;
   }
 
-
+/* 
   .screen-2, .screen-3{
     display: none;
-  }
+  } */
 
   
 
