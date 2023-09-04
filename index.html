@@ -250,6 +250,9 @@ body .mouth {
 
 
   <main>
+
+    
+
     
 
     <div class="container_nav body">
@@ -376,6 +379,124 @@ programmer ".😈💜
           
         </div>
       </div>
+
+
+
+
+      <!--  -->
+
+
+      <div class="_insta">
+
+        <div class="_img_insta">
+        
+            <div class="Stoiry_ins">
+                <div class="img_ins"></div>
+                <div class="text_ins">Lorem</div>
+        </div>
+        
+        
+        </div>
+        
+        <div class="_img_insta">
+        
+            <div class="Stoiry_ins">
+                <div class="img_ins"></div>
+                <div class="text_ins">Lorem</div>
+        </div>
+        
+        
+        </div>
+        
+        
+        <div class="_img_insta">
+        
+            <div class="Stoiry_ins">
+                <div class="img_ins"></div>
+                <div class="text_ins">Lorem</div>
+        </div>
+        
+        
+        </div>
+        
+        
+        <div class="_img_insta">
+        
+            <div class="Stoiry_ins">
+                <div class="img_ins"></div>
+                <div class="text_ins">Lorem</div>
+        </div>
+        
+        
+        </div>
+        
+        
+        
+        
+        </div>
+
+        
+<style>
+  ._insta{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin: 10px 0;
+  }
+
+
+
+
+.Stoiry_ins{
+  padding: 9px;
+    background: var(--primary-fg);
+    box-shadow: var(--secondary-shadow);
+    border: 1px solid var(--primary-border);
+    border-radius: 7px;  
+  padding: 20px;
+}
+
+._img_insta{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+._insta{
+  display: none;
+}
+
+.img_ins{
+  width: 80px;
+  height: 80px;
+  background: orange;
+  border-radius: 50%;
+  position: relative;
+  margin: auto;
+  background-image: linear-gradient(90deg, #FDA240, #C5087E), linear-gradient(90deg, #FDA240, #C5087E);
+  background-position: 0 0px, 100% 100%;
+  background-size: 100% 5px;
+  border-left: 5px solid #FDA240;
+  border-right: 5px solid #C5087E;
+  padding: 10px 5px;
+  margin-top: -35px;
+position: absolute;
+left: 30%;
+bottom: 10px;
+border: 5px solid white;
+}
+
+.card-img{
+  position: relative;
+}
+</style>
+
+
+
+      <!--  -->
+
+
+
+
   
       <div class="user-stories">
         <div class="user-stories-inner">
@@ -486,42 +607,36 @@ programmer ".😈💜
       <section id="section-2" class="owl-carousel owl-theme">
      
         <article class="card item">
-          <img class="card-img" src="https://assets.codepen.io/2585/Growth.svg" alt="placeholder-hand-drawn-vector" height="500" width="500">
-          <h5>It's.. short</h5>
-          <p>And brief.</p>
-          <a href="#">Ready</a>
+          <div class="card-img" >
+            <div class="img_ins"></div>
+          </div>
         </article>
     
         
         <article class="card item">
-          <img class="card-img" src="https://assets.codepen.io/2585/Reflecting.svg" alt="placeholder-hand-drawn-vector" height="500" width="500">
-          <h5>It's.. short</h5>
-          <p>And brief.</p>
-          <a href="#">Ready</a>
+          <div class="card-img" >
+            <div class="img_ins"></div>
+          </div>
         </article>
    
         
         <article class="card item">
-          <img class="card-img" src="https://assets.codepen.io/2585/Chaotic+Good.svg" alt="placeholder-hand-drawn-vector" height="500" width="500">
-          <h5>It's.. short</h5>
-          <p>And brief.</p>
-          <a href="#">Ready</a>
+          <div class="card-img" >
+            <div class="img_ins"></div>
+          </div>
         </article>
 
         <article class="card item">
-          <img src="https://assets.codepen.io/2585/Meela+Pantalones.svg" height="500" width="500">
-          <h5>Lengthy drawn-out tall protracted and extended title</h5>
-          <p>Ironically short amount of content.</p>
-          <a href="#">Check it out</a>
-        </article>
-        
-        <article class="card item">
-          <img class="card-img" src="https://assets.codepen.io/2585/Fling.svg" alt="placeholder-hand-drawn-vector" height="500" width="500">
-          <h5>It's.. short</h5>
-          <p>And brief.</p>
-          <a href="#">Ready</a>
+          <div class="card-img" >
+            <div class="img_ins"></div>
+          </div>
         </article>
 
+        <article class="card item">
+          <div class="card-img" >
+            <div class="img_ins"></div>
+          </div>
+        </article>
 
 
 
@@ -812,11 +927,11 @@ programmer ".😈💜
 <script>
   var owl = $('.owl-carousel');
 owl.owlCarousel({
-    items:2,
+    items:1,
     loop:true,
     margin:10,
     autoplay:true,
-    autoplayTimeout:1000,
+    autoplayTimeout:3000,
     autoplayHoverPause:true
 });
 $('.play').on('click',function(){
