@@ -228,7 +228,7 @@ html, body {
 }
 
 
-.uh-image {
+/* .uh-image {
   width: 11rem;
   height: 11rem;
   border-radius: 50%;
@@ -237,23 +237,37 @@ html, body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+} */
+
+
+
+.user-header-wrapper{
+  display: block;
+  background: aqua;
+  border-radius: 50px 50px 0px 0px !important;
+  margin-top: 13vh;
 }
 
-
-
-
+.uh-image {
+  margin-top: -10vh;
+  z-index: 999;
+  position: absolute;
+  left: 39%;
+  margin-bottom: 23px;
+}
 
 .gradient {
   width: 80px;
   height:80px;
   padding: .3em;
-  position: absolute;
+  /* position: absolute; */
   border-radius: 50%;
 background-image: url(https://scontent.fcai21-3.fna.fbcdn.net/v/t39.30808-6/342028187_1288786722046643_4856343071835186615_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeGQ4O4WD-5TO-F8Mlu9dTx-f6A1hxZQTeB_oDWHFlBN4HpjDqAZwjpxu526IPJ_mSF2dFagmBhuOGeuagbgRICs&_nc_ohc=RiapSIsS_RUAX_9Gf9U&_nc_ht=scontent.fcai21-3.fna&oh=00_AfDhSP92vF-6hqpQV1mlDpSvt4I7KvcqcBetR2CwzWNgyg&oe=64FA2617);
   background-position: center center;
 background-size: cover;
 
 border: 5px solid var(--blue);
+margin: auto;
 
 
 }
@@ -586,11 +600,16 @@ background: #d3d3d3;
 
 
 ._user {
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: space-between;
   gap: 30px;
 height: 20vh;
+}
+
+.user-header-inner {
+  width: 100%;
+  text-align: center;
 }
 
 .user-links {
