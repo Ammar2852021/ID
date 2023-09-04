@@ -1130,7 +1130,7 @@ button {
 		color var(--trans-dur);
 }
 .modal:before {
-	background-color: hsl(223,90%,60%);
+	background-color: transparent;
 	border-radius: 50%;
 	content: "";
 	filter: blur(60px);
@@ -1344,10 +1344,10 @@ button {
 }
 /* state change */
 [data-state="2"]:before {
-	background-color: hsl(3,90%,60%);
+	background-color:transparent;
 }
 [data-state="3"]:before {
-	background-color: hsl(138,90%,60%);
+	background-color:transparent;
 }
 .modal__icon + .modal__icon,
 [data-state="1"] .modal__icon:first-child,
