@@ -128,10 +128,13 @@ html, body {
 .user-links a {
   margin: 0 1em 0 0;
   cursor: pointer;
+  display: flex;
 }
-.user-links a span {
+.user-links h2 {
   color: var(--black);
   font-weight: bolder;
+  margin: 0;
+  font-size: 18px;
 }
 .user-bio-name {
   font-weight: bold;
@@ -344,8 +347,8 @@ html, body {
     height: 10rem;
   }
   .uh-image-inner {
-    width: 9.5rem;
-    height: 9.5rem;
+    width: 5rem;
+    height: 5rem;
   }
 
   .story-wrapper {
@@ -368,12 +371,12 @@ html, body {
     padding: 0 1em 0 0;
   }
   .uh-image {
-    width: 9rem;
-    height: 9rem;
+    width: 5rem;
+    height: 5rem;
   }
   .uh-image-inner {
-    width: 8.5rem;
-    height: 8.5rem;
+    width: 5rem;
+    height: 5rem;
   }
   .user-stories-inner {
     width: 100%;
@@ -396,12 +399,12 @@ html, body {
     padding: 0;
   }
   .uh-image {
-    width: 8.5rem;
-    height: 8.5rem;
+    width: 5rem;
+    height: 5rem;
   }
   .uh-image-inner {
-    width: 8rem;
-    height: 8rem;
+    width: 5rem;
+    height: 5rem;
   }
   .story-wrapper {
     margin: 0 .25em;
@@ -421,6 +424,12 @@ html, body {
 ._user {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 30px
+}
+
+.user-links {
+  display: flex;
   justify-content: space-between;
 }
 
