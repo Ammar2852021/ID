@@ -1361,8 +1361,19 @@ button {
 }
 
 
+main{
+  display: none;
+}
+
 
 @media (max-width:992px) {
+
+
+  main{
+    display: block;
+  }
+  
+
 
   body{
     background: #e6eaea;
