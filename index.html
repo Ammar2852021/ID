@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="/ID/css/normalize.css">
     <link rel="stylesheet" href="/ID/css/style.css">
 </head>
-<body>
+<body class="body">
 
 
   <main>
     
 
-    <div class="container_nav">
+    <div class="container_nav body">
       <div class="bottom-nav">
         
         <input type="radio" name="radio" value="1" id="tab-1" />
@@ -297,7 +297,6 @@
         </div>
         <div class="ui--screen-section">
           <div class="ui--graph"></div>
-          <div class="ui-graph--marker"></div>
         </div>
         <div class="ui--screen-section">
           <div class="ui--horizontal-scroll">
@@ -448,13 +447,13 @@
   $index = $(this).prevAll().length;
   
   if($index === 1) {
-    $('body').css('background', '#ffa6c3');
+    $('.body').css('background', '#ffa6c3');
   } else if($index === 3) {
-    $('body').css('background', '#c988f8');
+    $('.body').css('background', '#c988f8');
   } else if($index === 5) {
-    $('body').css('background', '#7ce2dd');
+    $('.body').css('background', '#7ce2dd');
   } else {
-    $('body').css('background', '#ffd284');
+    $('.body').css('background', '#ffd284');
   }
 });
 </script>
