@@ -148,9 +148,7 @@ html, body {
 }
 .user-stories-inner {
   width: 100%;
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+ display: flex;
   grid-column-gap: 4em;
 }
 .story-wrapper {
@@ -364,7 +362,7 @@ html, body {
 }
 @media (max-width: 936px) {
   .user-header-inner {
-    width: 90%;
+    width: 100%;
   }
   .uh-left {
     padding: 0 1em 0 0;
