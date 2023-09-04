@@ -486,6 +486,7 @@ border: 5px solid var(--blue);
   .user-stories-inner {
     width: 100%;
     grid-column-gap: .75em;
+    margin-left: -30px;
   }
   .story-wrapper {
     margin: 0 .5em;
