@@ -239,11 +239,17 @@ html, body {
   cursor: pointer;
 } */
 
+svg {
+  width: 25px;
+  height: 25px;
+}
 
+main{
+  border-radius: 50px 50px 0px 0px !important;
+}
 
 .user-header-wrapper{
   display: block;
-  background: aqua;
   border-radius: 50px 50px 0px 0px !important;
   margin-top: 13vh;
 }
@@ -251,14 +257,13 @@ html, body {
 .uh-image {
   margin-top: -10vh;
   z-index: 999;
-  position: absolute;
   left: 39%;
-  margin-bottom: 23px;
+  margin-bottom: 10px;
 }
 
 .gradient {
-  width: 80px;
-  height:80px;
+  width: 100px;
+  height:100px;
   padding: .3em;
   /* position: absolute; */
   border-radius: 50%;
@@ -285,9 +290,10 @@ margin: auto;
 
 .user-info h3 {
   font-size: 20px;
-  display: flex;
-  align-items: center;
+  display: -webkit-inline-box;
+    align-items: center;
   gap: 10px;
+
 }
 
 
@@ -565,7 +571,6 @@ background: #d3d3d3;
 
   .user-stories-inner {
     width: 100%;
-    margin-left: -30px;
   }
   .story-wrapper {
     margin: 0 .5em;
@@ -599,13 +604,13 @@ background: #d3d3d3;
 
 
 
-._user {
+/* ._user {
   display: block;
   align-items: center;
   justify-content: space-between;
   gap: 30px;
 height: 20vh;
-}
+} */
 
 .user-header-inner {
   width: 100%;
@@ -1645,12 +1650,13 @@ main{
 
   main{
     display: block;
+    background: #e6eaea;
   }
   
 
 
   body{
-    background: #e6eaea;
+    background:white;
   }
   
 
