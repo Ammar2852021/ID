@@ -469,28 +469,32 @@ programmer ".😈💜
 }
 
 .img_ins{
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height:70px;
   background: orange;
   border-radius: 50%;
   position: relative;
   margin: auto;
   background-image: linear-gradient(90deg, #FDA240, #C5087E), linear-gradient(90deg, #FDA240, #C5087E);
   background-position: 0 0px, 100% 100%;
-  background-size: 100% 5px;
+  /* background-size: 100% 5px; */
   border-left: 5px solid #FDA240;
   border-right: 5px solid #C5087E;
   padding: 10px 5px;
   margin-top: -35px;
 position: absolute;
-left: 40%;
+left: calc(100%/3);
 bottom: 10px;
 border: 5px solid white;
+
+background-size: cover;
 }
 
 .card-img{
   position: relative;
 }
+
+
 </style>
 
 
@@ -609,35 +613,35 @@ border: 5px solid white;
      
       <section id="section-2" class="owl-carousel owl-theme">
      
-        <article class="card item">
-          <div class="card-img" >
-            <div class="img_ins"></div>
+        <article class="card item" >
+          <div class="card-img"   style="background-image: url(/ID/img/317742027_1283398869160552_1525267408546632233_n.jpg);">
+            <div class="img_ins"  style="background-image: url(/ID/img/317742027_1283398869160552_1525267408546632233_n.jpg);"></div>
           </div>
         </article>
     
         
         <article class="card item">
-          <div class="card-img" >
-            <div class="img_ins"></div>
+          <div class="card-img" style="background-image:url(/ID/img/333922030_569913725077501_5273172521575591091_n.jpg) ;" >
+            <div class="img_ins" style="background-image:url(/ID/img/333922030_569913725077501_5273172521575591091_n.jpg) ;" ></div>
           </div>
         </article>
    
         
         <article class="card item">
-          <div class="card-img" >
-            <div class="img_ins"></div>
+          <div class="card-img"  style="background-image:url(/ID/img/359704869_1411250006375437_8778586105101090061_n.jpg) ;">
+            <div class="img_ins"   style="background-image:url(/ID/img/359704869_1411250006375437_8778586105101090061_n.jpg) ;"></div>
           </div>
         </article>
 
         <article class="card item">
-          <div class="card-img" >
-            <div class="img_ins"></div>
+          <div class="card-img"  style="background-image: url(/ID/img/285325589_1148185899348517_1413105808272170964_n.jpg);">
+            <div class="img_ins"  style="background-image: url(/ID/img/285325589_1148185899348517_1413105808272170964_n.jpg);"></div>
           </div>
         </article>
 
         <article class="card item">
-          <div class="card-img" >
-            <div class="img_ins"></div>
+          <div class="card-img" style="background-image: url(/ID/img/358135384_1422022435298194_5006314026463682176_n.jpg);">
+            <div class="img_ins"  style="background-image: url(/ID/img/358135384_1422022435298194_5006314026463682176_n.jpg);"></div>
           </div>
         </article>
 
@@ -997,7 +1001,7 @@ border: 5px solid white;
 <script>
   var owl = $('.owl-carousel');
 owl.owlCarousel({
-    items:1,
+    items:1.5,
     loop:true,
     margin:10,
     autoplay:true,
