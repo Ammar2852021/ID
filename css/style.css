@@ -869,9 +869,7 @@ div#upload{
 
 .ui--card.ui--card-square {
   flex-direction: column;
-  aspect-ratio: 1/1;
-  min-width: 40%;
-}
+  aspect-ratio: 1/1;}
 .ui--card.ui--card-square-sm {
   flex-direction: column;
   aspect-ratio: 1/1;
