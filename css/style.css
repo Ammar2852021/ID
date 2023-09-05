@@ -261,11 +261,13 @@ main{
   margin-bottom: 10px;
 }
 
+
+
 .gradient {
   width: 100px;
   height:100px;
   padding: .3em;
-  /* position: absolute; */
+  position: absolute;
   border-radius: 50%;
 background-image: url(https://scontent.fcai21-3.fna.fbcdn.net/v/t39.30808-6/342028187_1288786722046643_4856343071835186615_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeGQ4O4WD-5TO-F8Mlu9dTx-f6A1hxZQTeB_oDWHFlBN4HpjDqAZwjpxu526IPJ_mSF2dFagmBhuOGeuagbgRICs&_nc_ohc=RiapSIsS_RUAX_9Gf9U&_nc_ht=scontent.fcai21-3.fna&oh=00_AfDhSP92vF-6hqpQV1mlDpSvt4I7KvcqcBetR2CwzWNgyg&oe=64FA2617);
   background-position: center center;
@@ -273,7 +275,9 @@ background-size: cover;
 
 border: 5px solid var(--blue);
 margin: auto;
-
+margin-top: -11vh;
+left: 35%;
+outline: 5px solid white;
 
 }
 
@@ -284,6 +288,7 @@ margin: auto;
 }
 .user-info {
   font-size: 2em;
+  margin:  10px 0;
 
 }
 
