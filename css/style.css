@@ -287,9 +287,13 @@ left: 37%;
 .user-info {
   font-size: 2em;
   margin:  10px 0;
-
+text-align: center;
 }
 
+.ui--section-title span {
+  border-bottom: 5px solid orangered;
+  margin-bottom: 2vh;
+}
 
 .user-info h3 {
   font-size: 20px;
@@ -615,7 +619,7 @@ height: 20vh;
 
 .user-header-inner {
   width: 100%;
-  text-align: center;
+  
 }
 
 .user-links {
