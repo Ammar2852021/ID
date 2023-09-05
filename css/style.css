@@ -31,7 +31,6 @@
     height: -webkit-fill-available;}
   
   .card { padding: 9px;
-    background: var(--primary-fg);
     box-shadow: var(--secondary-shadow);
     border: 1px solid var(--primary-border);
     border-radius: 7px;}
@@ -79,7 +78,7 @@ html {
 }
 
 .bottom-nav {
-  background: #fff;
+  background: #040404;
 
   display: flex;
   justify-content: space-around;
@@ -117,9 +116,9 @@ html {
   background: #ffdfea;
   transform: scale(1);
 }
-.bottom-nav input:checked + .cart {
+/* .bottom-nav input:checked + .cart {
   color: #A439F1;
-}
+} */
 .bottom-nav input:checked + .cart > ion-icon:first-child {
   opacity: 0;
 }
@@ -276,8 +275,7 @@ background-size: cover;
 border: 5px solid var(--blue);
 margin: auto;
 margin-top: -11vh;
-left: 35%;
-outline: 5px solid white;
+left: 40%;
 
 }
 
@@ -948,12 +946,7 @@ h5{
   overflow: hidden;
 }
 
-audio{
-  /* border:1px solid #555; */
-   background:#f1f3f4;
-   overflow: hidden;
-   border-radius: 5px;
- }
+
    .HTML_Audio_player{
    Position: relative;
      width:350px;
@@ -990,7 +983,7 @@ audio{
          margin-top: 10px;
    }
    audio::-webkit-media-controls-play-button {
-      background-color: #B1D4E0;
+      background-color: orangered;
       border-radius: 50%;}
 
 .ui--stack {
@@ -1235,7 +1228,7 @@ audio{
 }
 .ui--chart-pie::before {
   inset: 0;
-  background: conic-gradient(#000000 0%, #000000 calc(var(--p) * 1%), var(--primary-border) 0);
+  background: conic-gradient(#fda240 0%, #000000 calc(var(--p) * 1%), var(--primary-border) 0);
   -webkit-mask-image: radial-gradient(farthest-side, #0000 calc(99% - 5px), #000 calc(100% - 5px));
   mask-image: radial-gradient(farthest-side, #0000 calc(99% - 5px), #000 calc(100% - 5px));
 }
@@ -1689,6 +1682,7 @@ background: linear-gradient(297deg, rgba(247,248,248,1) 0%, rgba(189,201,199,1) 
     border-radius: 0;
     height: auto;
   box-shadow: none;
+  padding-bottom: 5vh;
   }
 
   .screen-1, .screen-2, .screen-3{
