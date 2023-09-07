@@ -290,6 +290,8 @@ margin-top: -13vh;
 
 }
 
+
+
 .uh-right {
   padding: 1em;
   height: 100%;
@@ -879,7 +881,10 @@ div#upload{
 
 .ui--card.ui--card-square {
   flex-direction: column;
-  aspect-ratio: 1/1;}
+  /* aspect-ratio: 1/1; */
+
+
+}
 .ui--card.ui--card-square-sm {
   flex-direction: column;
   aspect-ratio: 1/1;
@@ -932,6 +937,14 @@ div#upload{
 
 .ui--stack .ui--card .ui--toggle {
   margin: auto;
+}
+
+
+.ui--toggle {
+  /* background: aliceblue; */
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 .ui--stack-horizontal {
@@ -2100,3 +2113,4 @@ h1, h2, h3, h4 {
   display: none;
   border-radius: 0px 0px 6px 6px;
 }
+
