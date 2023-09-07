@@ -13,7 +13,7 @@
     integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="body">
+<body >
 
 
 
@@ -247,7 +247,7 @@ body .mouth {
 </style>
 
 
-<div class="cover"></div>
+<div class="cover body"></div>
 
 
   <main>
@@ -734,7 +734,7 @@ background-size: cover;
             <div class="ui--toggle">
 
 
-              <audio controls>
+              <audio controls class="audioPlayer">
                 <source src="/ID/audio/WhatsApp Audio 2023-09-05 at 04.39.34.dat.unknown" type="audio/mpeg">
                 <source src="/ID/audio/WhatsApp Audio 2023-09-05 at 04.39.34.dat.unknown" type="audio/wav">
                 <source src="/ID/audio/WhatsApp Audio 2023-09-05 at 04.39.34.dat.unknown" type="audio/flac">
@@ -754,7 +754,7 @@ background-size: cover;
            
             <div class="ui--toggle">
 
-              <audio controls>
+              <audio controls class="audioPlayer">
                 <source src="/ID/audio/WhatsApp Audio 2023-09-05 at 04.42.07.dat.unknown" type="audio/mpeg">
                 <source src="/ID/audio/WhatsApp Audio 2023-09-05 at 04.42.07.dat.unknown" type="audio/wav">
                 <source src="/ID/audio/WhatsApp Audio 2023-09-05 at 04.42.07.dat.unknown" type="audio/flac">
@@ -776,7 +776,7 @@ background-size: cover;
               <span class="ui-card--subtitle">Battery at 96%</span>
             </div>
             <div class="ui--toggle">
-              <audio controls>
+              <audio controls class="audioPlayer">
                 <source src="/ID/audio/WhatsApp Audio 2023-09-05 at 04.47.19.dat.unknown" type="audio/mpeg">
                 <source src="/ID/audio/WhatsApp Audio 2023-09-05 at 04.47.19.dat.unknown" type="audio/wav">
                 <source src="/ID/audio/WhatsApp Audio 2023-09-05 at 04.47.19.dat.unknown" type="audio/flac">
@@ -798,7 +798,7 @@ background-size: cover;
             </div>
             <div class="ui--toggle">
 
-              <audio controls>
+              <audio controls class="audioPlayer">
                 <source src="/ID/audio/WhatsApp Audio 2023-09-05 at 04.51.08.dat.unknown" type="audio/mpeg">
                 <source src="/ID/audio/WhatsApp Audio 2023-09-05 at 04.51.08.dat.unknown" type="audio/wav">
                 <source src="/ID/audio/WhatsApp Audio 2023-09-05 at 04.51.08.dat.unknown" type="audio/flac">
@@ -826,7 +826,7 @@ background-size: cover;
             <div class="ui--toggle">
             
 
-              <audio controls>
+              <audio controls class="audioPlayer">
                 <source src="/ID/audio/WhatsApp Audio 2023-09-05 at 04.54.19.dat.unknown" type="audio/mpeg">
                 <source src="/ID/audio/WhatsApp Audio 2023-09-05 at 04.54.19.dat.unknown" type="audio/wav">
                 <source src="/ID/audio/WhatsApp Audio 2023-09-05 at 04.54.19.dat.unknown" type="audio/flac">
@@ -1033,6 +1033,42 @@ background-size: cover;
     
 
   </main>
+
+
+
+
+
+
+
+
+  <!-- إضافة المزيد من العناصر الصوتية هنا -->
+  
+  <script>
+    var audioPlayers = document.querySelectorAll('.audioPlayer');
+    audioPlayers.forEach(function(player) {
+      player.addEventListener('play', function() {
+        audioPlayers.forEach(function(otherPlayer) {
+          if (otherPlayer !== player) {
+            otherPlayer.pause();
+          }
+        });
+      });
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
