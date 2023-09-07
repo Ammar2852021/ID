@@ -243,14 +243,22 @@ svg {
   height: 25px;
 }
 
-main{
+/* main{
   border-radius: 50px 50px 0px 0px !important;
+} */
+
+
+.cover{
+  width: auto;
+  height: 30vh;
+  background:#040404;
+  margin: 10px;
+  border-radius: 10px;
+ 
 }
 
 .user-header-wrapper{
   display: block;
-  border-radius: 50px 50px 0px 0px !important;
-  margin-top: 13vh;
 }
 
 .uh-image {
@@ -267,7 +275,7 @@ main{
   height:100px;
   padding: .3em;
   position: absolute;
-  border-radius: 50%;
+  border-radius: 20px;
 background-image: url(/ID/img/me.png);
   background-position: top;
 background-size: cover;
@@ -275,7 +283,7 @@ background-size: cover;
 border: 5px solid var(--blue);
 margin: auto;
 margin-top: -11vh;
-left: 37%;
+/* left: 37%; */
 
 }
 
@@ -287,7 +295,7 @@ left: 37%;
 .user-info {
   font-size: 2em;
   margin:  10px 0;
-text-align: center;
+/* text-align: center; */
 }
 
 .ui--section-title span {
@@ -1653,7 +1661,7 @@ main{
 
 
   body{
-    background:orangered;
+    background:black;
   }
   
 
