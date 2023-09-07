@@ -283,7 +283,7 @@ background-image: url(/ID/img/me.png);
   background-position: top;
 background-size: cover;
 
-border: 5px solid var(--blue);
+border: 5px solid white;
 margin: auto;
 margin-top: -13vh;
 /* left: 37%; */
