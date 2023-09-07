@@ -1882,16 +1882,9 @@ h1, h2, h3, h4 {
   display: block;
   /* border: solid 1px #e0e2e2; */
 }
-.comp .mid {
-  float: left;
-  display: block;
-  height: 100%;
-  position: relative;
-  background-color: #abadc6;
-  width: 50%;
-}
+
 .comp .mid.codigo {
-  background-color: #22262b;
+  background-color: black;
 }
 .comp .site {
   overflow: hidden;
@@ -1900,6 +1893,7 @@ h1, h2, h3, h4 {
   height: 138px;
   bottom: 0;
   right: 0;
+  display: none;
 }
 .comp .site .topbar {
   width: 100%;
@@ -2072,7 +2066,7 @@ h1, h2, h3, h4 {
   width: 13px;
 }
 .comp .codigo .item.lrg {
-  width: 50px;
+  width: 100px;
 }
 .comp .codigo .line {
   padding: 2px 0;
