@@ -1891,7 +1891,6 @@ h1, h2, h3, h4 {
 }
 .comp .monitor {
   width: 100%;
-  height: 181px;
   display: block;
   /* border: solid 1px #e0e2e2; */
 }
@@ -1901,10 +1900,10 @@ h1, h2, h3, h4 {
   height: 100%;
   position: relative;
   background-color: #abadc6;
-  width: 50%;
+  width: 100%;
 }
 .comp .mid.codigo {
-  background-color: #22262b;
+  background-color: black;
 }
 .comp .site {
   overflow: hidden;
@@ -2035,9 +2034,9 @@ h1, h2, h3, h4 {
     opacity: 1;
   }
 }
-.comp .codigo {
+/* .comp .codigo {
   padding: 12px 0px 14px 14px;
-}
+} */
 .comp .codigo .var {
   background-color: #ac5e47;
   -webkit-animation: code;
@@ -2082,27 +2081,27 @@ h1, h2, h3, h4 {
   border-radius: 3px;
 }
 .comp .codigo .item.min {
-  width: 13px;
+  width: 33px;
 }
 .comp .codigo .item.lrg {
-  width: 50px;
+  width: 80px;
 }
 .comp .codigo .line {
-  padding: 2px 0;
+  padding: 10px 0;
   width: 100%;
 }
-.comp .codigo .tab1 {
+/* .comp .codigo .tab1 {
   padding-left: 5px;
 }
 .comp .codigo .tab2 {
   padding-left: 8px;
-}
-.comp .codigo .tab3 {
+} */
+/* .comp .codigo .tab3 {
   padding-left: 10px;
 }
 .comp .codigo .tab4 {
   padding-left: 12px;
-}
+} */
 
 .base {
   width: 338px;
@@ -2114,3 +2113,10 @@ h1, h2, h3, h4 {
   border-radius: 0px 0px 6px 6px;
 }
 
+
+
+
+
+.mid.body {
+  display: none;
+}
