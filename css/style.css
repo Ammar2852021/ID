@@ -2075,19 +2075,19 @@ h1, h2, h3, h4 {
 }
 .comp .codigo .item {
   height: 4px;
-  width: 20px;
+  width: 50px;
   float: left;
   margin-right: 3px;
   border-radius: 3px;
 }
 .comp .codigo .item.min {
-  width: 33px;
-}
-.comp .codigo .item.lrg {
   width: 80px;
 }
+.comp .codigo .item.lrg {
+  width: 110px;
+}
 .comp .codigo .line {
-  padding: 10px 0;
+  padding: 2px 0;
   width: 100%;
 }
 /* .comp .codigo .tab1 {
