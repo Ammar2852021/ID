@@ -1718,6 +1718,123 @@ background: linear-gradient(297deg, rgba(247,248,248,1) 0%, rgba(189,201,199,1) 
 
 /*  */
 
+.main-header__avatars {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+@media (max-width: 480px) {
+  .main-header__avatars {
+    display: none;
+  }
+}
+.main-header__avatars .main-header__avatar {
+  width: 36px;
+  height: 36px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.main-header__avatars .main-header__avatar + .main-header__avatar {
+  margin-left: -5px;
+}
+.main-header__avatars .add-button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  color: #d8d8d8;
+  margin-left: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-header__avatars .add-button svg {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+.main-header__add {
+  background-color: #ea4e34;
+  border: none;
+  color: #fff;
+  padding: 4px;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-left: auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.main-header__add:hover {
+  background-color: #e4361a;
+}
+.main-header__add svg {
+  width: 20px;
+  height: 20px;
+}
+.main-header-nav {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  padding: 20px 0;
+}
+.main-header-nav .nav-item {
+  color: var(--theme-inactive-color);
+  text-decoration: none;
+  padding-bottom: 6px;
+  transition: 0.3s;
+  border-bottom: 1px solid transparent;
+}
+.main-header-nav .nav-item:hover {
+  color: #fff;
+}
+.main-header-nav .nav-item.active {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+.main-header-nav * + * {
+  margin-left: 24px;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+@media (max-width: 480px) {
+  .main-content {
+    gap: 10px;
+  }
+}
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 100%;
+  contain: layout;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  width: auto;
+  aspect-ratio: 1/1;
+}
+@media (max-width: 480px) {
+  .card {
+    aspect-ratio: 1/1.4;
+  }
+}
+.card.clicked {
+  position: absolute;
+  width: 500px;
+  height: 600px;
+  z-index: 2;
+}
 
 /* IE7 */
 .clearfix:before,
