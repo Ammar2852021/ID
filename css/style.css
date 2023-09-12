@@ -35,10 +35,13 @@
 
 
 .card-img{
-  height: 50vh;
+  height: 40vh;
   background-position: top;
   background-size: cover;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*  */
