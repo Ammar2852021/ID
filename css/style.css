@@ -80,88 +80,22 @@ html {
 
 .bottom-nav {
   background: #040404;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 10px;
   border-radius: 50px;
-
-}
-.bottom-nav input {
-  display: none;
-}
-.bottom-nav label {
-  cursor: pointer;
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #b5c4da;
-  z-index: 200;
-  position: relative;
-}
+  padding: 10px;}
 
 
+.bottom-nav a {color: white;}
 
-.bottom-nav ion-icon {
-  color: inherit;
-}
-.bottom-nav input:checked + .home {
-  color: #ff90b5;
-}
-.bottom-nav input:checked + .home > ion-icon:first-child {
-  opacity: 0;
-}
-.bottom-nav input:checked + .home::before {
-  background: #ffdfea;
-  transform: scale(1);
-}
-/* .bottom-nav input:checked + .cart {
-  color: #A439F1;
-} */
-.bottom-nav input:checked + .cart > ion-icon:first-child {
-  opacity: 0;
-}
-.bottom-nav input:checked + .cart::before {
-  background: #d9bcee;
-  transform: scale(1);
-}
-.bottom-nav input:checked + .fav {
-  color: #00d1c7;
-}
-.bottom-nav input:checked + .fav > ion-icon:first-child {
-  opacity: 0;
-}
-.bottom-nav input:checked + .fav::before {
-  background: #c3eeec;
-  transform: scale(1);
-}
-.bottom-nav input:checked + .profile {
-  color: #ffc460;
-}
-.bottom-nav input:checked + .profile > ion-icon:first-child {
-  opacity: 0;
-}
-.bottom-nav input:checked + .profile::before {
-  background: #ffebc7;
-  transform: scale(1);
-}
-.bottom-nav input:checked + label .fill {
-  transform: scale(1);
-  opacity: 1;
-}
 
-.fill {
-  position: absolute;
-  transform: scale(0);
-  opacity: 0;
-  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
 
 audio.audioPlayer {
-  margin: 5px;
+  margin: 5px 0;
 }
+
 
 /* -
 -*-~*~-*-*-~*~-*-*-~*~* |
@@ -2120,3 +2054,9 @@ h1, h2, h3, h4 {
 .mid.body {
   display: none;
 }
+
+
+
+
+
+/*  */
