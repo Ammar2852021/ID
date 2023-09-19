@@ -157,5 +157,15 @@ class Utils {
 
 
 // 
+let main_con = document.getElementById('main_con');
+
+let main_lod = document.getElementById('main_lod');
 
 
+window.onload=function(){
+
+    main_lod.style.display='none';    
+    main_con .style.display='block';    
+
+
+}
