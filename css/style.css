@@ -2089,7 +2089,7 @@ h1, h2, h3, h4 {
 
 }
 
-.form-styled .group .control input:not([type="radio"]):not([type="checkbox"]):not([type="file"]), .form-styled .group .control textarea:not(:focus){
+.form-styled .group .control input:not([type="radio"]):not([type="checkbox"]):not([type="file"]), .form-styled .group .control textarea{
   padding: 10px;
   border: 1px solid white;
   width: -webkit-fill-available;
