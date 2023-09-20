@@ -97,6 +97,7 @@ html {
 
 audio.audioPlayer {
   margin: 5px 0;
+  width: 85vw;
 }
 
 
@@ -1170,7 +1171,7 @@ h5{
   aspect-ratio: 1/1;
   position: relative;
   display: inline-grid;
-  margin: 18px 6px 6px;
+  margin:5px;
   place-content: center;
   color: #666;
   text-align: center;
@@ -2063,3 +2064,14 @@ h1, h2, h3, h4 {
 
 
 /*  */
+
+
+
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  gap: 20px;
+  padding: 10px;
+}
