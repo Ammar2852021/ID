@@ -1591,7 +1591,7 @@ button {
 
 
 main{
-  display: none;
+  display: none !important;
 }
 
 
@@ -1602,12 +1602,12 @@ main{
     color: white;
   }
     .loding{
-    display: none;
+    display: none ;
     }
 
 
   main{
-    display: block;
+    display: block !important;
     background: black;
   }
   
