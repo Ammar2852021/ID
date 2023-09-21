@@ -1240,76 +1240,7 @@ background-size: cover;
 
 
 
-      <div class="contact__formHolder  ">
-        <form class="contact__form form-styled" data-url="contact_form.php" data-success-msg="Message sent successfully!" data-err-msg="Oops! something went wrong, please try again." style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
-
-          <!-- name control -->
-          <div class="group">
-            <!-- <label>Name</label> -->
-            <div class="control has-prefix-icon">
-              <input type="text" name="name" placeholder="Ammar Ahmed" minlength="3" required="">
-              <i class="fa-solid fa-circle-user prefix-icon"></i>
-
-              <!-- validation errors messages -->
-              <div class="errors-msgs">
-                <input class="required" type="hidden" value="Name is required">
-                <input class="minLength" type="hidden" value="Name must be at least 3 characters">
-              </div>
-            </div>
-          </div>
-
-          <!-- email control -->
-          <div class="group">
-            <!-- <label>Email</label> -->
-            <div class="control has-prefix-icon">
-              <input class="ltr-dir" type="email" inputmode="email" name="email" placeholder="ammarahmed132004@outlook.com" required="">
-              <i class="fa-solid fa-envelope prefix-icon"></i>
-
-              <!-- validation errors messages -->
-              <div class="errors-msgs">
-                <input class="required" type="hidden" value="Email is required">
-                <input class="invalid" type="hidden" value="Please enter a valid email address">
-              </div>
-            </div>
-          </div>
-
-          <!-- phone control -->
-          <div class="group phone-number">
-            <!-- <label>Phone </label> -->
-            <div class="control has-prefix-icon">
-              <input type="tel" inputmode="tel" name="phone" placeholder="Phone Number">
-              <i class="fa-solid fa-phone prefix-icon"></i>
-
-              <!-- validation errors messages -->
-              <div class="errors-msgs">
-                <input class="invalid" type="hidden" value="Please enter a valid Phone Number">
-              </div>
-            </div>
-          </div>
-
-          <!-- message control -->
-          <div class="group">
-            <!-- <label>Message</label> -->
-            <div class="control has-prefix-icon">
-              <textarea name="message" placeholder="Write message..." required=""></textarea>
-              <i class="fa-solid fa-comments prefix-icon"></i>
-
-              <!-- validation errors messages -->
-              <div class="errors-msgs">
-                <input class="required" type="hidden" value="Message is required">
-              </div>
-            </div>
-          </div>
-
-          <!-- submit button -->
-          <div class="group">
-            <div class="control">
-              <button class="submit-btn w-btn w-btn--s2 w-btn--dark">Send</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    
+   
 
   </main>
 
@@ -1426,6 +1357,9 @@ function selectcolor(el) {
   const el1 = document.createElement("div");
   el1.classList.add("leftbar");
   el1.style.setProperty("--gradient", el.style.getPropertyValue("--gradient"))
+  
+
+
   colorsEl.appendChild(el1)
   const el2 = document.createElement("div");
   el2.classList.add("rightbar");
