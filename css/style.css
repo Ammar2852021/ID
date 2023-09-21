@@ -1610,6 +1610,8 @@ main{
     display: block !important;
     background: black;
   }
+
+
   
 
 
@@ -2110,4 +2112,289 @@ justify-content: center;
 text-align: center;
 border-radius: 30px;
 width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+._text {
+  font-family: var(--font);
+  display: flex;
+  justify-content: center;
+}
+
+/* Timeline Container */
+.timeline {
+  background: var(--primary-color);
+  margin: 20px auto;
+  padding: 5px;
+}
+
+/* Card container */
+.card-text {
+  position: relative;
+  max-width: 400px;
+}
+
+/* setting padding based on even or odd */
+.card-text:nth-child(odd) {
+  padding: 30px 0 30px 30px;
+}
+.card-text:nth-child(even) {
+  padding: 30px 30px 30px 0;
+}
+/* Global ::before */
+.card-text::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  border: solid orangered;
+}
+
+/* Setting the border of top, bottom, left */
+.card-text:nth-child(odd)::before {
+  left: 0px;
+  top: -4.5px;
+  bottom: -4.5px;
+  border-width: 5px 0 5px 5px;
+  border-radius: 50px 0 0 50px;
+}
+
+/* Setting the border of top, bottom, right */
+.card-text:nth-child(even)::before {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-width: 5px 5px 5px 0;
+  border-radius: 0 50px 50px 0;
+}
+
+/* Removing the border if it is the first card */
+.card-text:first-child::before {
+  border-top: 0;
+  border-top-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's odd */
+.card-text:last-child:nth-child(odd)::before {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's even */
+.card-text:last-child:nth-child(even)::before {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  background: #0A0A0A;
+  color: gray;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Title of the card */
+.title {
+  color: orangered;
+  position: relative;
+}
+
+/* Timeline dot  */
+.title::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 999px;
+  border: 3px solid orangered;
+}
+
+/* text right if the card is even  */
+.card:nth-child(even) > .info > .title {
+  text-align: right;
+}
+
+/* setting dot to the left if the card is odd */
+.card-text:nth-child(odd) > .info > .title::before {
+  left: -47px;
+}
+
+/* setting dot to the right if the card is odd */
+.card-text:nth-child(even) > .info > .title::before {
+  right: -48px;
+}
+
+/* color */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: "Inter";
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.C_color {
+  margin: 0;
+  width: 100%;
+  display: grid;
+  /* place-content: center; */
+}
+
+.colors {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 0.5rem 1.5rem;
+}
+.colors:before {
+  position: absolute;
+  content: "";
+  inset: 0.0625rem;
+  border-radius: 0.9375rem;
+  z-index: 2
+}
+
+.leftbar, .rightbar {
+  position: absolute;
+  content: "";
+  width: 0.25rem;
+  border-radius: 0.125rem;
+  background: var(--gradient);
+  transition: transform 300ms ease;
+  z-index: 4;
+}
+.leftbar {
+  inset: 0.65rem auto 0.65rem 0.5rem;
+  animation: leftIn 400ms ease;
+}
+.rightbar {
+  inset: 0.65rem 0.5rem 0.65rem auto;
+  animation: rightIn 400ms ease;
+}
+
+@media (hover: hover) {
+  .colors:hover .leftbar {
+    transform: translateX(0.15rem)
+  }
+  .colors:hover .rightbar {
+    transform: translateX(-0.15rem)
+  }
+}
+@keyframes leftIn {
+  from {
+    transform: translateX(0.5rem) scale(0.9);
+    opacity: 0;
+  }
+}
+@keyframes rightIn {
+  from {
+    transform: translateX(-0.5rem) scale(0.9);
+    opacity: 0;
+  }
+}
+@keyframes leftOut {
+  to {
+    transform: translateX(-0.7rem) scale(1.1);
+    opacity: 0;
+  }
+}
+@keyframes rightOut {
+  to {
+    transform: translateX(0.7rem) scale(1.1);
+    opacity: 0;
+  }
+}
+
+
+.color {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  z-index: 6;
+  margin: 0.5rem;
+}
+
+.color > div {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+}
+.color > div:nth-child(1) {
+  border: 0.0625rem solid #29292c;
+  inset: 0rem;
+  opacity: 1;
+  transition: transform 450ms ease, opacity 450ms ease;
+}
+.color.active > div:nth-child(1) {
+  opacity: 0;
+  transform: scale(1.2);
+  transition: transform 300ms ease, opacity 300ms ease;
+}
+
+.color > div:nth-child(2) {
+  background: var(--gradient);
+  inset: 0;
+  transform: scale(0.7);
+  transition: transform 450ms ease;
+}
+.color.active > div:nth-child(2) {
+  transform: scale(1);
+  transition: transform 300ms ease;
+}
+
+.color > div:nth-child(3) {
+  background: #18181b;
+  inset: 0rem;
+  transform: scale(0);
+  transition: transform 300ms ease;
+}
+.color.active > div:nth-child(3) {
+  transform: scale(0.85);
+  transition: transform 300ms ease;
+}
+
+.color > div:nth-child(4) {
+  background: var(--gradient);
+  inset: 0rem;
+  transform: scale(0);
+  transition: transform 300ms ease;
+}
+.color.active > div:nth-child(4) {
+  transform: scale(0.6);
+  transition: transform 375ms ease 75ms;
 }

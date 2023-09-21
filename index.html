@@ -822,6 +822,72 @@ background-size: cover;
 
 
 
+<div class="C_color">
+      <div class="colors">
+        <div class="color active" onclick="selectcolor(this)" style="
+          --gradient: linear-gradient(to right bottom, #ffa51a, #ff910c, #ff7c07, #ff640c, #ff4816);">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="color" onclick="selectcolor(this)" style="
+          --gradient: linear-gradient(135deg, #3cfd7f, #02fa99, #00f6af, #00f1c1, #12ebcf);">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="color" onclick="selectcolor(this)" style="
+          --gradient: linear-gradient(to right bottom,  #2eadff, #3d83ff, #7e61ff);">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="leftbar" style="--gradient: linear-gradient(to right bottom, #ffa51a, #ff910c, #ff7c07, #ff640c, #ff4816);"></div>
+        <div class="rightbar" style="--gradient: linear-gradient(to right bottom, #ffa51a, #ff910c, #ff7c07, #ff640c, #ff4816);"></div>
+      </div>
+    </div>
+
+
+
+  <div class="_text">
+    <div class="timeline">
+      <div class="outer">
+        <div class="card-text">
+          <div class="info">
+            <h3 class="title">Title 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          </div>
+        </div>
+        <div class="card-text">
+          <div class="info">
+            <h3 class="title">Title 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          </div>
+        </div>
+        <div class="card-text">
+          <div class="info">
+            <h3 class="title">Title 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          </div>
+        </div>
+        <div class="card-text">
+          <div class="info " >
+            <h3 class="title">Title 4</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          </div>
+        </div>
+        <div class="card-text">
+          <div class="info">
+            <h3 class="title">Title 5</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
  
 
    
@@ -1341,7 +1407,32 @@ $('.stop').on('click',function(){
 })
 </script>
 
+<script>
+  // if the pen is in thumbnail view, scale it up
+if (location.pathname.match(/fullcpgrid/i) ? true : false) {
+  document.documentElement.style.fontSize = "32px"
+}
 
+
+const colorsEl = document.querySelector(".colors")
+
+function selectcolor(el) {
+  if (el.classList.contains("active")) {return} 
+  document.querySelector(".active").classList.remove("active")
+  el.classList.add("active")
+  document.querySelectorAll(".leftbar").forEach(barEl => barEl.style.animation = "leftOut 400ms ease forwards")
+  document.querySelectorAll(".rightbar").forEach(barEl => barEl.style.animation = "rightOut 400ms ease forwards")
+  
+  const el1 = document.createElement("div");
+  el1.classList.add("leftbar");
+  el1.style.setProperty("--gradient", el.style.getPropertyValue("--gradient"))
+  colorsEl.appendChild(el1)
+  const el2 = document.createElement("div");
+  el2.classList.add("rightbar");
+  el2.style.setProperty("--gradient", el.style.getPropertyValue("--gradient"))
+  colorsEl.appendChild(el2)
+}
+</script>
 
 
     <script src="/ID/js/app.js"></script>
