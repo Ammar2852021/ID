@@ -956,6 +956,7 @@ h5{
    .HTML_Audio_player audio {
    width: 100%;
    outline: none;
+   
    }
       
       .song-name { font-size:18px;
@@ -963,10 +964,13 @@ h5{
         display: flex;
          justify-content: center;
          margin-top: 10px;
+         
    }
    audio::-webkit-media-controls-play-button {
       background-color: #5371f4;
-      border-radius: 50%;}
+      border-radius: 50%;
+    
+    }
 
 .ui--stack {
   display: flex;
@@ -2691,9 +2695,9 @@ html {
 body .container_button{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: 15px;
-  margin: 15px 0;
+  margin: 30px 0;
 }
 body .container_button> div {
   flex-basis: 100%;
