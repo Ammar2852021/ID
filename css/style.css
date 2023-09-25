@@ -91,7 +91,6 @@ html {
   padding: 10px;
   background-color: #5371f4;
   background-image: url(https://assets.codepen.io/4175254/terrazzo-blue.svg);
-  box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.4), inset 0 -2px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
   color: #fff;
   text-shadow: 0 1px rgba(0, 0, 0, 0.2);
@@ -190,6 +189,7 @@ html, body {
 svg {
   width: 25px;
   height: 25px;
+  color: white;
 }
 
 /* main{
@@ -250,7 +250,7 @@ margin-top: -13vh;
 }
 
 .ui--section-title span {
-  border-bottom: 5px solid orangered;
+  border-bottom: 5px solid #5371f4;
   margin-bottom: 2vh;
 }
 
@@ -803,7 +803,7 @@ body {
 
 
 .ui--card.ui--card-square{
-  background: none;
+  background: none !important;
   box-shadow: none !important;
 }
 
@@ -965,7 +965,7 @@ h5{
          margin-top: 10px;
    }
    audio::-webkit-media-controls-play-button {
-      background-color: orangered;
+      background-color: #5371f4;
       border-radius: 50%;}
 
 .ui--stack {
@@ -2205,7 +2205,7 @@ width: 50%;
   content: "";
   position: absolute;
   width: 50%;
-  border: solid white;
+  border: solid #5371f4;
 }
 
 /* Setting the border of top, bottom, left */
@@ -2256,7 +2256,7 @@ width: 50%;
 
 /* Title of the card */
 .title {
-  color: orangered;
+  color: #5371f4;
   position: relative;
 }
 
@@ -2442,4 +2442,278 @@ width: 50%;
 .color.active > div:nth-child(4) {
   transform: scale(0.6);
   transition: transform 375ms ease 75ms;
+}
+
+
+
+
+
+
+
+
+
+/*  */
+
+.button.dark-single {
+  --background: none;
+  --rectangle: #242836;
+  --success: #4BC793;
+}
+.button.white-single {
+  --background: none;
+  --rectangle: #F5F9FF;
+  --arrow: #5371f4;
+  --success: #5371f4;
+  --shadow: rgba(10, 22, 50, .1);
+}
+.button.dark {
+  --background: #242836;
+  --rectangle: #1C212E;
+  --arrow: #F5F9FF;
+  --text: #F5F9FF;
+  --success: #2F3545;
+}
+
+.button {
+  --background: #5371f4;
+  --rectangle: #5371f4;
+  --success: #5371f4;
+  --text: #fff;
+  --arrow: #fff;
+  --checkmark: #fff;
+  --shadow: rgba(10, 22, 50, .24);
+  display: flex;
+  overflow: hidden;
+  text-decoration: none;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  background: var(--background);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px -1px var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+}
+.button:active {
+  transform: scale(0.95);
+  box-shadow: 0 1px 4px -1px var(--shadow);
+}
+.button ul {
+  margin: 0;
+  padding: 16px 40px;
+  list-style: none;
+  text-align: center;
+  position: relative;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--text);
+}
+.button ul li:not(:first-child) {
+  top: 16px;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+.button ul li:nth-child(2) {
+  top: 76px;
+}
+.button ul li:nth-child(3) {
+  top: 136px;
+}
+.button > div {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: var(--rectangle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+@-webkit-keyframes text {
+  10%, 85% {
+    transform: translateY(-100%);
+  }
+  95%, 100% {
+    transform: translateY(-200%);
+  }
+}
+
+@keyframes text {
+  10%, 85% {
+    transform: translateY(-100%);
+  }
+  95%, 100% {
+    transform: translateY(-200%);
+  }
+}
+@-webkit-keyframes line {
+  5%, 10% {
+    transform: translateY(-30px);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  65% {
+    transform: translateY(0);
+  }
+  75%, 100% {
+    transform: translateY(30px);
+  }
+}
+@keyframes line {
+  5%, 10% {
+    transform: translateY(-30px);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  65% {
+    transform: translateY(0);
+  }
+  75%, 100% {
+    transform: translateY(30px);
+  }
+}
+@-webkit-keyframes svg {
+  0%, 20% {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+  }
+  21%, 89% {
+    stroke-dasharray: 26px;
+    stroke-dashoffset: 26px;
+    stroke-width: 3px;
+    margin: -10px 0 0 -10px;
+    stroke: var(--checkmark);
+  }
+  100% {
+    stroke-dasharray: 26px;
+    stroke-dashoffset: 0;
+    margin: -10px 0 0 -10px;
+    stroke: var(--checkmark);
+  }
+  12% {
+    opacity: 1;
+  }
+  20%, 89% {
+    opacity: 0;
+  }
+  90%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes svg {
+  0%, 20% {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+  }
+  21%, 89% {
+    stroke-dasharray: 26px;
+    stroke-dashoffset: 26px;
+    stroke-width: 3px;
+    margin: -10px 0 0 -10px;
+    stroke: var(--checkmark);
+  }
+  100% {
+    stroke-dasharray: 26px;
+    stroke-dashoffset: 0;
+    margin: -10px 0 0 -10px;
+    stroke: var(--checkmark);
+  }
+  12% {
+    opacity: 1;
+  }
+  20%, 89% {
+    opacity: 0;
+  }
+  90%, 100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes background {
+  10% {
+    transform: scaleY(0);
+  }
+  40% {
+    transform: scaleY(0.15);
+  }
+  65% {
+    transform: scaleY(0.5);
+    border-radius: 0 0 50% 50%;
+  }
+  75% {
+    border-radius: 0 0 50% 50%;
+  }
+  90%, 100% {
+    border-radius: 0;
+  }
+  75%, 100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes background {
+  10% {
+    transform: scaleY(0);
+  }
+  40% {
+    transform: scaleY(0.15);
+  }
+  65% {
+    transform: scaleY(0.5);
+    border-radius: 0 0 50% 50%;
+  }
+  75% {
+    border-radius: 0 0 50% 50%;
+  }
+  90%, 100% {
+    border-radius: 0;
+  }
+  75%, 100% {
+    transform: scaleY(1);
+  }
+}
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: inherit;
+}
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+body .container_button{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 15px;
+  margin: 15px 0;
+}
+body .container_button> div {
+  flex-basis: 100%;
+  width: 0;
+}
+body .container_button.button {
+  margin: 16px;
+}
+@media (max-width: 400px) {
+  body .container_button.button {
+    margin: 12px;
+  }
+}
+body .dribbble {
+  position: fixed;
+  display: block;
+  right: 20px;
+  bottom: 20px;
+}
+body .dribbble img {
+  display: block;
+  height: 28px;
 }
