@@ -2277,6 +2277,7 @@ width: 50%;}
   display: flex;
   justify-content: center;
   margin-bottom: 5vh;
+  display: none;
 }
 
 /* Timeline Container */
