@@ -1066,7 +1066,7 @@ h5{
          
    }
    audio::-webkit-media-controls-play-button {
-      background-color: #5371f4;
+      background-color:var(--vegas-gold);
       border-radius: 50%;
     
     }
@@ -1313,7 +1313,7 @@ h5{
 }
 .ui--chart-pie::before {
   inset: 0;
-  background: conic-gradient(#5371f4 0%, #000000 calc(var(--p) * 1%), var(--primary-border) 0);
+  background: conic-gradient(var(--vegas-gold) 0%, #000000 calc(var(--p) * 1%), var(--primary-border) 0);
   -webkit-mask-image: radial-gradient(farthest-side, #0000 calc(99% - 5px), #000 calc(100% - 5px));
   mask-image: radial-gradient(farthest-side, #0000 calc(99% - 5px), #000 calc(100% - 5px));
 
@@ -1439,6 +1439,7 @@ button {
 	border: 0.125rem dashed hsla(var(--hue),10%,50%,0.4);
 	flex: 1;
 	padding: 0.375rem 2rem;
+  text-align: center;
 }
 .modal__col + .modal__col {
 	flex: 1;
