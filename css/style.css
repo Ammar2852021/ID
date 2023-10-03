@@ -918,9 +918,7 @@ body {
 
 
 div#upload{
-  box-shadow: var(--secondary-shadow);
-  border: 1px solid var(--primary-border);
-  border-radius: 10px;
+
   margin: 16px 24px;
     width: -webkit-fill-available;
 }
@@ -1504,6 +1502,7 @@ button {
 	align-items: center;
 	height: 2.5em;
 	padding: 0.5em;
+  display: none;
 }
 .modal__icon {
 	display: block;
