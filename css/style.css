@@ -2890,7 +2890,10 @@ ul li label .icon-box {
   align-items: center;
   border-radius: 10px;
 }
-ul li label .icon-box .fa {
+ul li label  .icon-box .fa {
   font-size: 30px;
-  color: #6a9bd8;
+}
+
+.icon-box a{
+  color: goldenrod;
 }
