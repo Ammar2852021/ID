@@ -2841,22 +2841,11 @@ span.ui--detail-value {
 
 /*  */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #ebf5fc;
-}
 
 ul {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -2895,5 +2884,5 @@ ul li label  .icon-box .fa {
 }
 
 .icon-box a{
-  color: goldenrod;
+  color: var(--vegas-gold);
 }
