@@ -701,7 +701,7 @@ height: 20vh;
   --primary-bg: #f4f4f4;
   --primary-fg: #ebefef;
   --primary-shadow: #d3e3e0;
-  --primary-border: rgba(189, 201, 199, 0.5);
+  --primary-border: rgba(0, 0, 0, 0.5);
   --secondary-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -1012,7 +1012,7 @@ div#upload{
 }
 .ui--stack-horizontal .vertical-separator {
   width: 1px;
-  background: #ccc;
+  background: var(--jet);
 }
 
 h5{
@@ -1314,7 +1314,7 @@ h5{
 .ui--chart-pie::before {
   inset: 0;
   background: conic-gradient(var(--vegas-gold) 0%, #000000 calc(var(--p) * 1%), var(--primary-border) 0);
-  -webkit-mask-image: radial-gradient(farthest-side, #0000 calc(99% - 5px), #000 calc(100% - 5px));
+  -webkit-mask-image: radial-gradient(farthest-side, #07030300 calc(99% - 5px), #000 calc(100% - 5px));
   mask-image: radial-gradient(farthest-side, #0000 calc(99% - 5px), #000 calc(100% - 5px));
 
 
@@ -1545,7 +1545,7 @@ button {
 }
 .modal__message {
 	animation-delay: 0.1s;
-	font-size: 1em;
+	font-size: 0.8em;
 	margin-bottom: 1.5em;
 	min-height: 3em;
 }
@@ -2832,3 +2832,65 @@ svg.feather.feather-search {
 }
 
 
+
+
+
+span.ui--detail-value {
+  display: flex;
+}
+
+/*  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #ebf5fc;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+ul li {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  margin: 15px;
+}
+ul li label {
+  position: relative;
+  cursor: pointer;
+}
+ul li label input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+}
+ul li label :checked ~ .icon-box {
+background: var(--vegas-gold);
+}
+ul li label :checked ~ .icon-box .fa {
+  transform: scale(0.95);
+}
+ul li label .icon-box {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+ul li label .icon-box .fa {
+  font-size: 30px;
+  color: #6a9bd8;
+}
