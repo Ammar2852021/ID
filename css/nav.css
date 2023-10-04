@@ -112,7 +112,7 @@
   border-radius: 20px;
   background-color: var(--search-area-bg);
   padding-right: 12px;
-  height: 40px;
+  height: 35px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -711,8 +711,8 @@
     height: 20px;
   }
   .add-btn svg, .notification-btn svg, .mode-switch svg {
-    width: 16px;
-    height: 16px;
+    width: 36px;
+    height:36px;
   }
 
   .app-header-right button {
@@ -2868,3 +2868,9 @@
     .timeline-text { max-width: 700px; }
   
   }
+
+
+  .app-header {
+    display: flex;
+    gap: 20px;
+}
