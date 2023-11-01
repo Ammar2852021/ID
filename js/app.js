@@ -167,7 +167,6 @@ window.onload=function(){
     main_lod.style.display='none';    
     main_con .style.display='block';    
 
-
 }
 
 
