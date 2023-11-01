@@ -23,7 +23,8 @@
   <link rel="stylesheet" href="css/nav.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -552,7 +553,7 @@
         
       <div class="app">
           <div class="header">
-              <div class="title">E<span style="color: #9fdd62;">N</span>G/Ammar Ahmed
+              <div class="title">E<span style="color: var(--vegas-gold);">N</span>G/Ammar Ahmed
               </div>
               <div class="desc">
                   We are planning to get together on friday night to have some fun, join if you are free!
@@ -576,11 +577,9 @@
                       </ul>
                       <div class="event-info">
                           <span class="going-status">
-                              <ul style="display: flex;">
-                               
-                           
-                                 
-                                  <li class="li-more">
+                              <ul style="display: block;">
+                             
+                                  <li class="li-more" style=" margin: 15px;">
                                       +5
                                   </li>
                               </ul>
@@ -1046,50 +1045,72 @@
           </section>
 
 
+    
+          <div class="divs owl-carousel owl-theme">
+            
+            <div class="folder-card item">
+              <div class="folder-card__icon">
+                <!--Image in CSS-->
+              </div>
+              <span class="folder-card__title">TOTSWE</span>
+            </div>
+
+<div class="folder-card item">
+<div class="folder-card__icon">
+<!--Image in CSS-->
+</div>
+<span class="folder-card__title">TOTSWE</span>
+</div>
+
+
+<div class="folder-card item">
+<div class="folder-card__icon">
+<!--Image in CSS-->
+</div>
+<span class="folder-card__title">TOTSWE</span>
+</div>
 
 
 
 
 
+</div>
 
-<div id="pin"></div>
+
+
+
+
+        </div>
+
+
+
 
   <style>
+    .x{
+      height: 30vh;
+    background: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px 25px;
+    }
 
+    .c{
+        background: var(--vegas-gold);
 
-
-#pin {
-  width: 18em;
-  height: 14em;
-  margin-left: -9em;
-  margin-top: -6em;
-  background: repeating-linear-gradient(160deg, rgba(255,255,255,0), rgba(255,255,255,0) 0.95em, white 0.95em 1em) 1% 40%/24% 75%, linear-gradient(white, white) 7% 60%/0.2% 75%, linear-gradient(white, white) 13% 55%/0.2% 75%, linear-gradient(white, white) 19% 43%/0.2% 75%, linear-gradient(white, white) 24.8% 30%/0.2% 75%, linear-gradient(160deg, rgba(255,255,255,0) 17%, #afeeee 17% 82%, rgba(255,255,255,0) 82%) 3.25% 0/22.5% 100%, linear-gradient(160deg, rgba(255,255,255,0) 15%, white 15% 85%, rgba(255,255,255,0) 85%) 0 0/25% 100%, repeating-linear-gradient(-160deg, rgba(255,255,255,0), rgba(255,255,255,0) 0.95em, #afeeee 0.95em 1em) 33.33% 48%/25% 79%, linear-gradient(#afeeee, #afeeee) 32% 35%/0.2% 75%, linear-gradient(#afeeee, #afeeee) 38% 50%/0.2% 75%, linear-gradient(#afeeee, #afeeee) 44% 60%/0.2% 75%, linear-gradient(-160deg, rgba(255,255,255,0) 18%, #8de7e7 18% 82%, rgba(255,255,255,0) 82%) 33.33% 0/25% 100%, linear-gradient(-160deg, rgba(255,255,255,0) 15%, #afeeee 15% 85%, rgba(255,255,255,0) 85%) 33.33% 0/25% 100%, repeating-linear-gradient(160deg, rgba(255,255,255,0), rgba(255,255,255,0) 0.95em, white 0.95em 1em) 66.66% 48%/25% 79%, linear-gradient(white, white) 56% 60%/0.2% 75%, linear-gradient(white, white) 62% 50%/0.2% 75%, linear-gradient(white, white) 68% 40%/0.2% 75%, linear-gradient(white, white) 75% 30%/0.2% 75%, linear-gradient(160deg, rgba(255,255,255,0) 18%, #afeeee 18% 82%, rgba(255,255,255,0) 82%) 66.66% 0/25% 100%, linear-gradient(160deg, rgba(255,255,255,0) 15%, white 15% 85%, rgba(255,255,255,0) 85%) 66.66% 0/25% 100%, repeating-linear-gradient(-160deg, rgba(255,255,255,0), rgba(255,255,255,0) 0.95em, #afeeee 0.95em 1em) 99% 40%/24% 75%, linear-gradient(#afeeee, #afeeee) 81% 35%/0.2% 75%, linear-gradient(#afeeee, #afeeee) 87% 50%/0.2% 75%, linear-gradient(#afeeee, #afeeee) 93% 60%/0.2% 75%, linear-gradient(-160deg, rgba(255,255,255,0) 17%, #8de7e7 17% 82%, rgba(255,255,255,0) 82%) 96.75% 0/22.5% 100%, linear-gradient(-160deg, rgba(255,255,255,0) 15%, #afeeee 15% 85%, rgba(255,255,255,0) 85%) 100% 0/25% 100%, linear-gradient(-10deg, rgba(64,224,208,0) 48.5%, #21ccbb 49%) 0 100%/25% 17%, linear-gradient(10deg, rgba(64,224,208,0) 48.5%, #21ccbb 49%) 33.33% 100%/25% 17%, linear-gradient(-10deg, rgba(64,224,208,0) 48.5%, #21ccbb 49%) 66.66% 100%/25% 17%, linear-gradient(10deg, rgba(64,224,208,0) 48.5%, #21ccbb 49%) 100% 100%/25% 17%;
-  background-repeat: no-repeat;
-}
-#pin::before {
-  width: 2em;
-  height: 2em;
-  left: 12%;
-  top: -1%;
-  background-color: #dc143c;
-  border-radius: 50%;
-  border-bottom-left-radius: 0;
-  box-shadow: 2.7em 15.6em 0 #4169e1;
-  transform: rotate(-45deg);
-}
-#pin::after {
-  width: 15em;
-  height: 11.5em;
-  left: 6%;
-  top: -22%;
-  border-top-left-radius: 10em 12em;
-  border-top-right-radius: 10em 12em;
-  border-left: 0.15em dashed transparent;
-  border-top: 0.15em dashed white;
-  border-right: 0.15em dashed white;
-}
- 
+        background: var(--border-gradient-onyx);
+    border: 1px solid var(--vegas-gold);
+    }
 </style>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1853,23 +1874,7 @@
 
 
 
-  <script>
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-      items: 2,
-      loop: true,
-      margin: 10,
-      autoplay: true,
-      autoplayTimeout: 3000,
-      autoplayHoverPause: true
-    });
-    $('.play').on('click', function () {
-      owl.trigger('play.owl.autoplay', [1000])
-    })
-    $('.stop').on('click', function () {
-      owl.trigger('stop.owl.autoplay')
-    })
-  </script>
+
 
   <script>
     // if the pen is in thumbnail view, scale it up
@@ -1924,9 +1929,31 @@
     }
 
   </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="/ID/js/app.js"></script>
+
+
+  <script>
+    var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:3,
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[5000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+  </script>
+
+
 </body>
 
 </html>
@@ -2058,7 +2085,7 @@ background: rgba(255,255,255,0.12);
 
 div.body ul.user-status li.active
 {
-background: #9fdd62;
+background: var(--vegas-gold);
 color: #fff;
 }
 
@@ -2147,7 +2174,7 @@ position: absolute;
 content: '';
 width: 40%;
 height: 5px;
-background: #9fdd62;
+background: var(--vegas-gold);
 }
 
 div.event-info span.going-status span.desc:after
@@ -2173,7 +2200,7 @@ font-size: 10px;
 font-weight: 600;
 text-transform: uppercase;
 display: inline-block;
-background: #9fdd62;
+background: var(--vegas-gold);
 padding: 2px 5px;
 letter-spacing: 0.5px;
 }
@@ -2216,7 +2243,7 @@ font-size: 10px;
 font-weight: 600;
 text-transform: uppercase;
 display: block;
-background: #9fdd62;
+background: var(--vegas-gold);
 display: inline-block;
 padding: 2px 5px;
 letter-spacing: 0.5px;
@@ -2246,7 +2273,7 @@ position: relative;
 div.event-info span.going-date span.desc
 {
 display: flex;
-background: #9fdd62;
+background: var(--vegas-gold);
 justify-content: center;
 border-radius: 7px;
 }
